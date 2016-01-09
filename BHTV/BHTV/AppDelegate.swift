@@ -15,6 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //修改全局的tintColor
+        UITabBar.appearance().tintColor = UIColor.blackColor()
+        
+        //创建window窗口
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        //设置根控制器
+        window?.rootViewController = MainTabBarController()
+        window?.backgroundColor = UIColor.whiteColor()
+        
+        //让窗口生效
+        window?.makeKeyAndVisible()
+        
+        
+        
+        
+        
         return true
     }
 

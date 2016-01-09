@@ -11,11 +11,11 @@
 		F5F91A671C40BD8300AC280B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F91A651C40BD8300AC280B /* Main.storyboard */; };
 		F5F91A691C40BD8300AC280B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F91A681C40BD8300AC280B /* Assets.xcassets */; };
 		F5F91A6C1C40BD8300AC280B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F91A6A1C40BD8300AC280B /* LaunchScreen.storyboard */; };
-		F5F91A7B1C40F5F300AC280B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F91A771C40F5F300AC280B /* ViewController.swift */; };
 		F5F91A7D1C40F6B000AC280B /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F91A7C1C40F6B000AC280B /* LiveViewController.swift */; };
 		F5F91A7F1C40F6C200AC280B /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F91A7E1C40F6C200AC280B /* VideoViewController.swift */; };
 		F5F91A811C40F6D200AC280B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F91A801C40F6D200AC280B /* NewsViewController.swift */; };
 		F5F91A831C40F6E100AC280B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F91A821C40F6E100AC280B /* DataViewController.swift */; };
+		F5F91A851C41007000AC280B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F91A841C41007000AC280B /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +25,11 @@
 		F5F91A681C40BD8300AC280B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F91A6B1C40BD8300AC280B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F91A6D1C40BD8300AC280B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5F91A771C40F5F300AC280B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5F91A7C1C40F6B000AC280B /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		F5F91A7E1C40F6C200AC280B /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		F5F91A801C40F6D200AC280B /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F5F91A821C40F6E100AC280B /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		F5F91A841C41007000AC280B /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +75,12 @@
 		F5F91A731C40F5F300AC280B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F5F91A761C40F5F300AC280B /* Main(主要) */,
 				F5F91A751C40F5F300AC280B /* Live(直播) */,
 				F5F91A7A1C40F5F300AC280B /* Video(录像) */,
 				F5F91A781C40F5F300AC280B /* News(新闻) */,
 				F5F91A741C40F5F300AC280B /* Data(数据) */,
 				F5F91A791C40F5F300AC280B /* Tool(工具) */,
-				F5F91A761C40F5F300AC280B /* Main(主要) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		F5F91A761C40F5F300AC280B /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
-				F5F91A771C40F5F300AC280B /* ViewController.swift */,
+				F5F91A841C41007000AC280B /* MainTabBarController.swift */,
 			);
 			path = "Main(主要)";
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F91A7B1C40F5F300AC280B /* ViewController.swift in Sources */,
 				F5F91A7D1C40F6B000AC280B /* LiveViewController.swift in Sources */,
 				F5F91A7F1C40F6C200AC280B /* VideoViewController.swift in Sources */,
+				F5F91A851C41007000AC280B /* MainTabBarController.swift in Sources */,
 				F5F91A811C40F6D200AC280B /* NewsViewController.swift in Sources */,
 				F5F91A831C40F6E100AC280B /* DataViewController.swift in Sources */,
 				F5F91A621C40BD8300AC280B /* AppDelegate.swift in Sources */,
@@ -271,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -309,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

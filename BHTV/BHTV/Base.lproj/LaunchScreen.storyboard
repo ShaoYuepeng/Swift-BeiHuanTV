@@ -14,14 +14,29 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prize1" translatesAutoresizingMaskIntoConstraints="NO" id="7VV-wi-CPP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7VV-wi-CPP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2SI-To-iGF"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="7VV-wi-CPP" secondAttribute="bottom" id="2zP-dA-jPx"/>
+                            <constraint firstItem="7VV-wi-CPP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="SaB-a6-2cL"/>
+                            <constraint firstAttribute="trailing" secondItem="7VV-wi-CPP" secondAttribute="trailing" id="uhm-NH-cMx"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="prize1" width="342" height="467"/>
+    </resources>
 </document>
