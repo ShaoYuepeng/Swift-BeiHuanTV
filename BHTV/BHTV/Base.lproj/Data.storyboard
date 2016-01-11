@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EDE-DK-pXa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--数据-->
+        <scene sceneID="X6J-Rb-gj0">
+            <objects>
+                <tableViewController id="XwB-Dh-gaL" customClass="DataViewController" customModule="BHTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kDp-r5-YJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="XwB-Dh-gaL" id="0yH-Rr-PIa"/>
+                            <outlet property="delegate" destination="XwB-Dh-gaL" id="PHF-Nb-K1s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="数据" id="dJi-RQ-uFa"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJL-Zo-woi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-605.5" y="975.5"/>
+        </scene>
+        <!--数据-->
+        <scene sceneID="aoC-ut-HmC">
+            <objects>
+                <navigationController id="EDE-DK-pXa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="数据" image="tabBar_friendTrends_icon" id="DKS-vB-M9Q"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VUa-e6-iVf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XwB-Dh-gaL" kind="relationship" relationship="rootViewController" id="Rp7-NL-Evq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Un-NV-2yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1068.5" y="975.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBar_friendTrends_icon" width="37" height="37"/>
+    </resources>
+</document>

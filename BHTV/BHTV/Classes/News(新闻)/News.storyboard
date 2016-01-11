@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jHc-7o-VnJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--新闻-->
+        <scene sceneID="HAw-tY-cQ6">
+            <objects>
+                <tableViewController id="x0M-s1-WJE" customClass="NewsViewController" customModule="BHTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ogm-Ge-QcY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="x0M-s1-WJE" id="iD5-PS-SqU"/>
+                            <outlet property="delegate" destination="x0M-s1-WJE" id="eRQ-1a-llv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="新闻" id="sHb-pe-FmJ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9s-n2-Nmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-574.5" y="53.5"/>
+        </scene>
+        <!--新闻-->
+        <scene sceneID="bR5-pc-PuM">
+            <objects>
+                <navigationController id="jHc-7o-VnJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="新闻" image="tabBar_new_icon" id="bAn-v8-qvk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Ns-Yh-33B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x0M-s1-WJE" kind="relationship" relationship="rootViewController" id="Q39-db-4ND"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBc-1y-Qel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1032.5" y="53.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBar_new_icon" width="37" height="37"/>
+    </resources>
+</document>

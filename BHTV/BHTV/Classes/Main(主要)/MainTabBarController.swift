@@ -39,7 +39,8 @@ class MainTabBarController: UITabBarController {
         // 4.设置属性
         childVc.title = title
         childVc.tabBarItem.image = UIImage(named: imageName)
-        childVc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
+        //拼接点击时高亮图片
+        childVc.tabBarItem.selectedImage = UIImage(named: imageName + "_click")
     }
 
     
